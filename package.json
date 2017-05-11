@@ -1,0 +1,44 @@
+{
+  "name": "transym",
+  "version": "0.0.0",
+  "description": "Transfer all symbols.",
+  "main": "transym.js",
+  "support": "transym.support.js",
+  "deploy": "transym.deploy.js",
+  "browser": "transym.deploy.js",
+  "scripts": {
+    "build": "babel transym.js --out-file transym.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha transym-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/transym.git"
+  },
+  "keywords": [
+    "transfer",
+    "all",
+    "symbol",
+    "transym"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/transym/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/transym#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "coprop": "^0.3.0",
+    "falzy": "^0.19.0",
+    "kein": "^0.25.0",
+    "wichevr": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.5.1"
+  }
+}
