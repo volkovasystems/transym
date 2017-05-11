@@ -1,0 +1,2 @@
+# transym
+Transfer all symbols.
