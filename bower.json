@@ -1,12 +1,13 @@
 {
   "name": "transym",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Transfer all symbols.",
   "main": "transym.deploy.js",
   "support": "transym.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -24,7 +25,7 @@
     "tests"
   ],
   "dependencies": {
-    "coprop": "^0.5.0",
+    "coprop": "^0.6.0",
     "falzy": "^0.20.0",
     "kein": "^0.26.0",
     "wichevr": "^0.10.0"
