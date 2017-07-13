@@ -1,6 +1,6 @@
 {
   "name": "transym",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Transfer all symbols.",
   "main": "transym.deploy.js",
   "support": "transym.support.js",
@@ -25,9 +25,9 @@
     "tests"
   ],
   "dependencies": {
-    "coprop": "^0.6.0",
+    "coprop": "^0.7.0",
     "falzy": "^0.20.0",
-    "kein": "^0.26.0",
-    "wichevr": "^0.10.0"
+    "kein": "^0.28.0",
+    "wichevr": "^0.13.0"
   }
 }
