@@ -1,48 +1,51 @@
 {
-  "name": "transym",
-  "version": "0.4.0",
-  "description": "Transfer all symbols.",
-  "main": "transym.js",
-  "support": "transym.support.js",
-  "deploy": "transym.deploy.js",
-  "browser": "transym.deploy.js",
-  "scripts": {
-    "build": "babel transym.js --out-file transym.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha transym-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/transym.git"
-  },
-  "keywords": [
-    "transfer",
-    "all",
-    "symbol",
-    "transym"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/transym/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/transym#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "coprop": "^0.7.0",
-    "falzy": "^0.20.0",
-    "kein": "^0.28.0",
-    "wichevr": "^0.13.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.2.0"
-  }
+	"name": "transym",
+	"version": "0.5.0",
+	"description": "Transfer all symbols.",
+	"main": "transym.js",
+	"support": "transym.support.js",
+	"deploy": "transym.deploy.js",
+	"browser": "transym.deploy.js",
+	"scripts": {
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"clear": "rsetmod clean --clear",
+		"build": "babel transym.js --out-file transym.support.js --source-maps && webpack --progress --display-modules",
+		"pretest": "npm run clear && npm run build",
+		"test": "node transym-test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/transym.git"
+	},
+	"keywords": [
+		"transfer",
+		"all",
+		"symbol",
+		"transym"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/transym/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/transym#readme",
+	"dependencies": {
+		"babel-runtime": "^6.25.0",
+		"coprop": "^0.8.0",
+		"falzy": "^0.23.0",
+		"kein": "^0.30.0",
+		"wichevr": "^0.14.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"source-map-loader": "^0.2.1",
+		"webpack": "^3.5.3"
+	}
 }
